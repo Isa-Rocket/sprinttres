@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #17202a;
+}
+
+div{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    padding: 2rem;
+}
+nav a{
+    color: whitesmoke;
+    font-weight: bold;
+    border: 1px solid #F39C12;
+    border-radius: 10px;
+    padding: 0.3rem;
+    margin: 3px;
+}
+nav a:hover{
+    background-color: black;
+    color:  #F1C40F;
+}
+.logo-mindy {
+    width: 13rem;
+    padding-top: 1rem;
+ }
+body{
+    justify-content: center;
+    background-color: whitesmoke;
+}
+header{
+    height: 10rem;
+    color: whitesmoke;
+    padding: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-color: #F39C12;
+    text-align: center;
+}
+main{
+    /*height: 60vh;*/
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+table, tr{ 
+    border: 1px solid whitesmoke;
+    text-align: center;
+}
+table{
+font-size: larger;
+    height: 40rem;
+    width: 30rem;
+}
+th{
+    background-color: #F1C40F;
+    width: 20rem;
+    height: 10rem;
+    text-align: center;
+
+}
+td{
+    background-color: #F39C12;
+    width: 20rem;
+    height: 6rem;
+    text-align: center;
+}
+footer{
+    background-color: #17202a;
+    border: 1px solid #F39C12;
+    color:whitesmoke;
+    height: 6rem;
+    text-align: center
+
+}
+.ben-tips{
+    flex-direction: column;
+}
+footer p{
+    padding: 2rem;
+    display: inline-block;
+    width: 20%;
+    ;
+}
+.foto-plane{ 
+    width: 70rem;
+    height: 30rem;
+    display: inline-block;
+}
+.foto-plane:hover{
+    background-color: #17202a;
+}
+.foto-aeropuerto{
+    width: 50%;  
+}
+h2{
+    color: whitesmoke;
+}
+p{
+ /*esta p es de index*/
+    font-size: x-large;
+    padding: 15rem;
+    color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.caja-contacto{
+ box-sizing: border-box;
+}
+.foto-ventana{
+    height: 80rem;
+    width: 60rem;
+}
+a:-webkit-any-link {
+    font-size: larger;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.cuerpito{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.formulario{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    padding: 1rem;
+}
+.formulario-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30rem;
+    height: 10rem;
+    padding: 1rem;
+}
+.foto-mindy{
+     width: 50rem;
+}
+.foto-foto{
+    width: 50rem;
+}
+.foto-pict{
+    width: 50rem;
+}
+.una-parte{
+    padding: 4rem;
+    background-color: #F39C12;
+}
+.foto1{
+    width: 50rem;
+}
+.ruffle-window{
+    justify-content: space-evenly;
+}
+select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+.fin-box{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+input[type="submit" i] {
+    height: 4rem;
+    width: 8rem;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    color: #17202a;
+    padding: 4px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+h4{
+    color: #17202a;
+    background-color: #F1C40F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: lighter;
+    font-style: italic;
+}
+.nota-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/*tablet*/   /* Desde 768px hasta 1023px incluido*/
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+/*mobile*/  /* Desde el más pequeño hasta 767px incluido*/
+@media only screen  and (max-width:767px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    header>img {
+        display: none;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        flex-direction: column-reverse;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        position: sticky;
+        bottom: 0;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+}
+}
